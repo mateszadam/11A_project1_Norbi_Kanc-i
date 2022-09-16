@@ -1,1 +1,5 @@
-# 11A_project1_Norbi_Kanc-i
+# 11A_project1_Norbi_Kancai
+##Névsor
+###Bóka Mártyás
+###Gémas Norbert
+###Matesz Ádám
