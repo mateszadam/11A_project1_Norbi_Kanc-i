@@ -98,48 +98,63 @@ body {
   top: 200px;
   background-color: black;
   height: 300px;
-  width: 200px;
+  width: 70px;
+  overflow-x: hidden;
+  transition: width 0.5s;
   border-left: 10px solid rgb(180, 26, 26);
   color: white;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  z-index: 100;
+  z-index: 20;
 }
+.navbar:hover {
+  width: 200px;
+}
+
 .navbar ul {
   list-style: none;
   padding-left: 10px;
 }
-.navbar ul li p, .navbar ul li img{
+.navbar ul li p,
+.navbar ul li img {
   float: left;
-
 }
-.navbar ul li p{
-    margin-top: 14px;
-    margin-left: 10px;
+.navbar ul li:hover p{
+  color: rgb(233, 41, 41);
+}
+.navbar ul li img {
+  margin-top: 14px;
+}
+.navbar ul li p {
+  color: white;
+  font-size: 20px;
+  margin-top: 23px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  display: none;
 }
 .navIMG {
   width: 40px;
 }
-.navLogo{
-    width: 90%;
-    margin-top: 40px;
+.navLogo {
+  width: 90%;
 }
 ::-webkit-scrollbar {
-    width: 0;
-  }
+  width: 0;
+}
 #scrollPath {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.05);
-  }
-  #prograssbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    max-height: 100%;
-    background: linear-gradient(to top, #880000, #c03434);
-  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+#prograssbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  max-height: 100%;
+  background: linear-gradient(to top, #880000, #c03434);
+}
