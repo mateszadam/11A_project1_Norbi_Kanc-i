@@ -10,11 +10,11 @@ function delayki(){
     setTimeout(navki, 300);
 }
 
-function fixheight(){}
+function fixheight(){
     height = document.getElementById('def_height').offsetHeight;
     console.log(height);
     document.getElementById('height').style.height = height - 20 + "px";
-
+}
 
 
 function navki(){
