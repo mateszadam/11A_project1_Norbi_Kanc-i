@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@439&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+}
 body {
   margin-top: 0;
   margin-left: 0;
@@ -110,7 +114,7 @@ body {
   z-index: 20;
 }
 .navbar:hover {
-  width: 200px;
+  width: 240px;
 }
 
 .navbar ul {
@@ -127,10 +131,14 @@ body {
 .navbar ul li img {
   margin-top: 14px;
 }
+.navbar ul li img {
+  margin-top: 10px;
+
+}
 .navbar ul li p {
   color: white;
   font-size: 20px;
-  margin-top: 23px;
+  margin-top: 17px;
   margin-bottom: 8px;
   margin-left: 10px;
   display: none;
@@ -164,8 +172,11 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height:80%;
 }
-
+.map_out{
+  height: 100%;
+}
 @media screen and (max-width: 1000px) {
   .item {
     width: calc(100% - 60px);
