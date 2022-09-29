@@ -6,6 +6,7 @@ body {
   margin-top: 0;
   margin-left: 0;
   background-color: rgb(175, 167, 167);
+  margin-bottom: 0;
 }
 .body {
   width: 70%;
@@ -114,7 +115,7 @@ body {
   z-index: 20;
 }
 .navbar:hover {
-  width: 240px;
+  width: 230px;
 }
 
 .navbar ul {
@@ -125,7 +126,7 @@ body {
 .navbar ul li img {
   float: left;
 }
-.navbar ul li:hover p{
+.navbar ul li:hover p {
   color: rgb(233, 41, 41);
 }
 .navbar ul li img {
@@ -133,7 +134,6 @@ body {
 }
 .navbar ul li img {
   margin-top: 10px;
-
 }
 .navbar ul li p {
   color: white;
@@ -168,17 +168,38 @@ body {
   max-height: 100%;
   background: linear-gradient(to top, #880000, #c03434);
 }
-.winners .map{
+.winners .map {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height:80%;
+  height: 80%;
 }
-.map_out{
+.map_out {
   height: 100%;
 }
+.footer {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer p {
+  text-align: center;
+  background-color: rgb(180, 26, 26);
+  margin-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .item {
     width: calc(100% - 60px);
+  }
+}
+@media screen and (hover: hover){
+  .mobile_nav{
+    display: none;
   }
 }
