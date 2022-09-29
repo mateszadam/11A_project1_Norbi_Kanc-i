@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Versenynaptár</title>
     <link rel="stylesheet" href="naptar.css">
 </head>
+
 <body>
     <div class="header">
         <h1 class="title">
@@ -15,13 +17,21 @@
     </div>
     <div class="navbar" onmouseenter="delayki()" onmouseleave="navbe()">
         <ul>
-            <li class="mobile_nav"><img src="img/menu.svg" alt="" class="navIMG"> <p>Versenynaptár</p></li>
+            <li class="mobile_nav"><img src="img/menu.svg" alt="" class="navIMG">
+                <p>Versenynaptár</p>
+            </li>
             <div style="clear: both;"></div>
-            <li><a href=""><img src="img/calendar.svg" alt="" class="navIMG"> <p id="title1">Versenynaptár</p></a></li>
+            <li><a href="naptar.html"><img src="img/calendar.svg" alt="" class="navIMG">
+                    <p id="title1">Versenynaptár</p>
+                </a></li>
             <li style="clear: both;"></li>
-            <li><a href=""><img src="img/teams.svg" alt="" class="navIMG"><p id="title2">Csapatok</p></a></li>
+            <li><a href="csapatok_fix.html"><img src="img/teams.svg" alt="" class="navIMG">
+                    <p id="title2">Csapatok</p>
+                </a></li>
             <li style="clear: both;"></li>
-            <li><a href=""><img src="img/maps.svg" alt="" class="navIMG"><p id="title3">Pályák</p></a></li>
+            <li><a href="pályák.html"><img src="img/maps.svg" alt="" class="navIMG">
+                    <p id="title3">Pályák</p>
+                </a></li>
             <li><img src="img/F1_logo.svg" alt="" class="navLogo"></li>
         </ul>
     </div>
@@ -31,7 +41,7 @@
                 <p class="name">BAHRAIN</p>
                 <p class="date">18 - 20 MAR</p>
                 <div class="winners">
-                    <div class="person" >
+                    <div class="person">
                         <img src="img/drivers/sai.png" alt="">
                         <p class="wname">SAI</p>
                         <p class="wplace">2</p>
@@ -403,17 +413,50 @@
             <div class="item" id="height">
                 <p class="name">JAPAN</p>
                 <p class="date">09 - 11 SEP</p>
-                <div class="winners map_out" >
+                <div class="winners map_out">
                     <img src="img/japan_map.png" alt="" class="map">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item" id="height2">
+                <p class="name">UNITED STATES</p>
+                <p class="date">21 - 23 OCT</p>
+                <div class="winners map_out">
+                    <img src="img/USA.png" alt="" class="map">
+                </div>
+            </div>
+            <div class="item" id="height3">
+                <p class="name">MEXICO</p>
+                <p class="date">28 - 30 OCT</p>
+                <div class="winners map_out">
+                    <img src="img/mexico.png" alt="" class="map">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item" id="height4">
+                <p class="name">BARZIL</p>
+                <p class="date">11 - 13 NOV</p>
+                <div class="winners map_out">
+                    <img src="img/brazil.png" alt="" class="map">
+                </div>
+            </div>
+            <div class="item" id="height5">
+                <p class="name">ABU DHABI</p>
+                <p class="date">18 - 20 NOV</p>
+                <div class="winners map_out">
+                    <img src="img/Abudhabi.png" alt="" class="map">
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <p>&copy;2022 Norbi Kancai (MÁ)</p>
+        <p>&copy;2022 Norbi Kancai (MÁ)<br><a class="forras" href="https://www.formula1.com/en/racing/2022.html">Forrás</a></p>
     </div>
     <div id="prograssbar"></div>
     <div id="scrollPath"></div>
     <script type="text/javascript" src="naptar.js"></script>
 </body>
+
 </html>
