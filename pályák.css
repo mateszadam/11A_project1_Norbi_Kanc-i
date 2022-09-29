@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: darkcyan;
 }
 
 #main {
@@ -28,12 +29,21 @@ body {
   width: calc(100% - 50px);
 }
 
-h1 {
+#banner {
+  background-color: cadetblue;
+  height: 300px;
+  background: url(img/banner_pályák.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner h1 {
   text-align: center;
   font-size: 80px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   text-decoration: underline;
+  text-shadow: 4px 4px 6px white;
 }
 
 .container {
@@ -71,4 +81,72 @@ h2 {
   font-size: 25px;
   text-decoration: underline;
   font-style: italic;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#menu_wrap {
+  width: 100%;
+  background-color: #111;
+}
+#menu_wrap img {
+  float: left;
+  width: 80px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+#menu {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+
+  background-color: #111;
+  overflow: hidden;
+}
+
+#menu ul li {
+  float: left;
+  border-right: 1px solid #333;
+  padding: 10px;
+  color: white;
+}
+
+#menu ul li:last-child {
+  border: none;
+
+  /* float: right; */
+}
+
+#menu ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  background-color: #222;
+}
+
+#footer {
+  height: 25px;
+  font-family: Arial, Helvetica, sans-serif, Times, serif;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #222;
+}
+
+.clear {
+  clear: both;
 }
