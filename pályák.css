@@ -1,32 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@439&display=swap");
+#menu ul li a{
+  font-family: "Quicksand", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: darkcyan;
 }
 
 #main {
-  width: 70%;
+  width: 100%;
 }
 
 .oszlop4 {
   float: left;
-  width: 100vw;
+  width: 100%;
 }
 
 .oszlop4 img {
   border: 1px solid black;
   margin: 6px;
-  width: calc(100% - 50px);
+  width: 100%;
 }
 
 .oszlop2 {
-  width: 100vw;
+  width: 100%;
   float: left;
 }
 
 .oszlop2 img {
   border: 1px solid black;
   margin: 6px;
-  width: calc(100% - 50px);
+  width: 100%;
 }
 
 #banner {
@@ -35,6 +40,7 @@ body {
   background: url(img/banner_pályák.avif);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -495px;
 }
 
 #banner h1 {
@@ -43,18 +49,21 @@ body {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   text-decoration: underline;
-  text-shadow: 4px 4px 6px white;
+  text-shadow: 10px 10px 10px black;
+  margin-top: 0;
 }
 
 .container {
   position: relative;
-  width: 25%;
+  width: 22%;
+  margin-left: 10px;
+  margin-right: 10px;
   float: left;
 }
 
 .overlay {
   position: absolute;
-  width: 100%;
+  width: 105%;
   height: 100%;
   top: 0;
   left: 0;
@@ -75,12 +84,18 @@ body {
   font-size: 20px;
   color: white;
   text-align: center;
+  width: 90%;
+}
+
+.text ul{
+    list-style-type:none;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: underline;
   font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 #wrapper {
@@ -89,7 +104,7 @@ h2 {
 
 #menu_wrap {
   width: 100%;
-  background-color: #111;
+  background-color: black;
 }
 #menu_wrap img {
   float: left;
@@ -98,7 +113,7 @@ h2 {
   margin-left: 30px;
 }
 #menu {
-  width: 600px;
+  width: 350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,15 +121,14 @@ h2 {
 #menu ul {
   list-style-type: none;
   margin: 0;
-
-  background-color: #111;
+  background-color: black;
   overflow: hidden;
 }
 
 #menu ul li {
   float: left;
   border-right: 1px solid #333;
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 
@@ -129,24 +143,36 @@ h2 {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
+  text-shadow: 5px 5px 5px;
 }
 
-#menu ul li a:hover {
-  background-color: #222;
+#menu ul li:hover a{
+  color: rgb(233, 41, 41);
 }
 
 #footer {
   height: 25px;
-  font-family: Arial, Helvetica, sans-serif, Times, serif;
-  color: whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aliceblue;
   text-align: center;
   font-size: 14px;
   font-style: italic;
   margin-top: 20px;
   padding: 5px;
-  background-color: #222;
+  background-color: #555;
+  
 }
 
 .clear {
   clear: both;
+}
+
+.text ul li img{
+  width: 12%;
+  height: 12%;
+}
+
+.text ul li img .singapore{
+  width: 5%;
+  height: 5%;
 }
