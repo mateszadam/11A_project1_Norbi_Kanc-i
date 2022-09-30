@@ -7,13 +7,24 @@ window.onscroll = function () {
 };
 
 function fixheight() {
-  height = document.getElementById("def_height").offsetHeight;
+  width = document.getElementById("body_id").offsetWidth - 1;
+  if(width > 800){
+  height = document.getElementById("def_height").offsetHeight + 1;
+  console.log(height)
   document.getElementById("height").style.height = height - 20 + "px";
   document.getElementById("height2").style.height = height - 20 + "px";
   document.getElementById("height3").style.height = height - 20 + "px";
   document.getElementById("height4").style.height = height - 20 + "px";
   document.getElementById("height5").style.height = height - 20 + "px";
-
+  } 
+  else{
+  height = document.getElementById("mobile_height").offsetHeight;
+  document.getElementById("height").style.height = height + "px";
+  document.getElementById("height2").style.height = height + "px";
+  document.getElementById("height3").style.height = height + "px";
+  document.getElementById("height4").style.height = height + "px";
+  document.getElementById("height5").style.height = height + "px";
+  }
 }
 function delayki() {
   setTimeout(navki, 300);
