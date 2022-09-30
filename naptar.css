@@ -203,9 +203,30 @@ body {
 .forras:hover{
   text-decoration: underline;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .item {
     width: calc(100% - 60px);
+  }
+  .person{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+  }
+  .person img {
+    transform: translateY(-25px);
+  }
+  .person p {
+    transition: none;
+    opacity: 1;
+  }
+  .winners .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
 @media screen and (hover: hover){
