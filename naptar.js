@@ -1,7 +1,7 @@
 window.onscroll = function () {
-  let progress = document.getElementById("prograssbar");
-  let TotalHeight = document.body.scrollHeight - window.innerHeight;
-  let progressHeight = (window.pageYOffset / TotalHeight) * 100;
+  var progress = document.getElementById("prograssbar");
+  var TotalHeight = document.body.scrollHeight - window.innerHeight;
+  var progressHeight = (window.pageYOffset / TotalHeight) * 100;
   progress.style.height = progressHeight + "%";
   fixheight();
 };
@@ -10,7 +10,6 @@ function fixheight() {
   width = document.getElementById("body_id").offsetWidth - 1;
   if(width > 800){
   height = document.getElementById("def_height").offsetHeight + 1;
-  console.log(height)
   document.getElementById("height").style.height = height - 20 + "px";
   document.getElementById("height2").style.height = height - 20 + "px";
   document.getElementById("height3").style.height = height - 20 + "px";
